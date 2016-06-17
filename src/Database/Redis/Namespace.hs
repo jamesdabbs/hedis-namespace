@@ -1,7 +1,8 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
-module Lib
-    ( runRedisNS
+module Database.Redis.Namespace
+    ( RedisNS
+    , runRedisNS
     , ttl
     , setnx
     , pttl

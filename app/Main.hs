@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Lib
+import Database.Redis.Namespace
 
 import           Control.Monad.Reader (liftIO)
 import           Data.ByteString      (ByteString)
