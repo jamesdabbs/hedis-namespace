@@ -1,7 +1,14 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Database.Redis.Namespace
-    ( RedisNS
+    ( -- Redis re-exports
+      R.Connection
+    , R.ConnectInfo(..)
+    , R.PortID(..)
+    , R.connect
+    , R.defaultConnectInfo
+    -- Namespaced
+    , RedisNS
     , runRedisNS
     , ttl
     , setnx
@@ -24,6 +31,7 @@ module Database.Redis.Namespace
     , lindex
     , lpush
     , smove
+    , pfcount
     , zscore
     , hdel
     , incrbyfloat
